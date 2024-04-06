@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/wcn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Trần Đình Quý | Profile</title>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="home" id="home">
+            <div class="containerhome">
+                <h1>Hello <span class="chamthan">!</span></h1>
+                <h1>I'm <span id="multitext"></span></h1>
+            </div>
+           <div class="links">
+               <ul class="sci">
+                    <li data-text="Gmail" data-color="#de3c3ccc"><a href="mailto:quysprolegend@gmail.com" class="mai"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li data-text="Instagram" data-color="#cd216ccc"><a href="https://www.instagram.com/dq.19_/" class="ins" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li data-text="Facebook" data-color="#1877f2cc"><a href="https://www.facebook.com/Quy.Zeq0109" class="fbk" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li data-text="Github" data-color="#0000008a"><a href="https://github.com/quyzeq" class="gih" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+           </div>
+        </div>
+        <div class="about" id="about">
+            <h1 class="title-i">about</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam ratione itaque natus quod soluta beatae ex corrupti praesentium, non dignissimos? Asperiores pariatur maxime adipisci aliquam natus fugiat, libero quos!
+            Distinctio animi quod architecto voluptates necessitatibus repudiandae optio hic fugit nulla vero obcaecati amet velit, officiis, et consequuntur vel aut eaque. Porro, impedit possimus temporibus nesciunt eaque ipsum nihil odio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis dolore molestias aspernatur porro vitae eum perferendis! Magni at expedita, error commodi iste sit laboriosam velit voluptas quasi, nam assumenda!
+            Laboriosam provident voluptatum nesciunt excepturi soluta similique commodi suscipit quas veritatis cum sed corporis ea ducimus hic nostrum cupiditate non, distinctio debitis aliquam beatae dolorum esse voluptatem accusamus aut. Deserunt. <br><br>
+            Quidem maxime obcaecati totam nihil provident, dolorem minus facilis tenetur eaque sit quaerat? Consequuntur magnam quia asperiores repudiandae quibusdam animi molestias mollitia eveniet? Recusandae dolores est iste a amet officiis?
+            Exercitationem vero unde iste rerum, quod omnis odit tempore eum nobis architecto dolore, corrupti aliquid doloribus quo reprehenderit. Assumenda repudiandae aliquam fugiat, rem odio earum sint error corrupti quibusdam ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sed dignissimos sint laudantium doloremque? Ratione vitae perferendis minus sapiente dolorum! Atque necessitatibus culpa libero quam dolor distinctio ipsa a fugiat. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, doloribus?
+        </p>
+        </div>
+        <div class="blog" id="blog">
+            <h1 class="title-i">blog</h1>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, praesentium esse? In autem eum aspernatur. Aut, illo. Est, nemo quisquam. Reiciendis ratione omnis totam qui impedit ex libero incidunt a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perferendis iusto fugit nam quaerat eveniet facere corporis blanditiis ipsam, ea nemo laborum sit earum culpa quam, explicabo assumenda quibusdam esse? <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nemo ipsam, facilis molestiae aut a laboriosam commodi consectetur et alias repellat beatae est dolor aspernatur, voluptates, rem tenetur enim dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dicta optio nobis recusandae rerum suscipit doloribus quae. Asperiores autem accusantium iste numquam obcaecati optio est sequi! Dignissimos, dolores voluptatum? Saepe.</p>
+        </div> 
+        <div class="contact" id="contact">
+            <h1 class="title-i">contact</h1>
+            <div class="formctn">
+                <form action="#" method="post">
+                    <div>
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" required placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" required placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="20" rows="5"  required placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                    <span class="box box1"></span>
+                    <span class="box box2"></span>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        let list =  document.querySelectorAll('.sci li');
+        let bg = document.querySelector('.home')
+        list.forEach(Element => {
+            Element.addEventListener('mouseenter', function (event){
+                // const pseudo = document.createElement('div');
+                let color = event.target.getAttribute('data-color');
+                bg.style.backgroundColor = color;
+                bg.style.transition = '0.5s';
+                bg.style.borderRadius = 30 + 'px';
+
+            })
+            Element.addEventListener('mouseleave', function (event){
+               
+                bg.style.backgroundImage= 'yellow';
+                
+                bg.style.backgroundColor = '';
+                bg.style.borderRadius = 0 ;
+            })
+        })
+        
+        let typedEffect = new Typed("#multitext",{
+            strings: ["Tran Dinh Quy","Student","Zeq"],
+            loop: true,
+            typeSpeed: 200,
+            backSpeed: 100,
+            backdelay: 1200,
+        })
+        
+    </script>
+</body>
+</html>

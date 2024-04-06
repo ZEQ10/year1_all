@@ -1,0 +1,106 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #262626;
+    display: grid;
+    grid-template-columns: 1fr 960px 1fr;
+}
+header, .main{
+    grid-column: 2;
+}
+a{
+	color:#ff9601;
+}
+
+header{
+    display: block;
+    height: 160px;
+    background: yellow;
+    
+}
+header nav{
+    display: flex;
+    height: 70.5px;
+    padding: 0px;
+    background: url('images/row1-top-tail.gif') left top repeat-x;
+    justify-content: center;
+}
+nav ul{
+    justify-content: center;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+}
+nav ul li{
+    float: left;
+    width: 190px;
+    line-height: 71px;
+    text-align: center;
+    background: url('images/menu-a-tail.gif') left no-repeat;
+    
+}
+nav ul li:first-child{
+    background: none;
+}
+nav ul li a{
+    font-size: 200%;
+    color: #262626;
+    text-transform:uppercase;
+    letter-spacing: -1px;
+    text-decoration: none;
+
+}
+nav ul li:hover{
+    background: #000;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+.logoandsearch{
+    display: flex;
+    justify-content: space-between;
+
+}
+.mau{
+    grid-column: 1 / span 1 3/span 1;
+    background-color: #ff2525;
+}
+.logo{
+   
+    
+    /* justify-content: center; */
+    position: relative;
+    line-height: 89px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    
+}
+.int{
+    font-size: 60px;
+    position: relative;
+}
+.chuE{
+    color: #ff9601;
+   
+}
+.des{
+    font-size:30px;
+    color: #9e9e9e;
+    position: absolute;
+    bottom: -9px;
+    margin-left: 5px;
+}
+input{
+    
+    
+    margin-top: 2em;
+    width: 250px;
+    height: 40px;
+}
+.main{
+    
+    border: #ff2525 solid 3px;
+}
+.main1 {
+    grid-column: 3;
+}

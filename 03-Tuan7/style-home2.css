@@ -1,0 +1,274 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #262626;
+    height: auto;
+}
+a{
+    color: #ff9601;
+}
+header{
+    height: 160px;
+    background-color: rgb(255, 255, 255);
+}
+header nav{
+    height: 71px;
+    background:url('images/row1-top-tail.gif') repeat-x;
+}
+nav ul{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul li{
+    display: inline-block;
+    width: 188px;
+    line-height: 70px;
+    text-align: center;
+    background-image: url('images/menu-a-tail.gif');
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+}
+
+
+nav ul li a{
+    font-size: 150%;
+    color: #262626;
+    text-transform: uppercase;
+    text-decoration: none;  
+}
+nav ul li:hover{
+    background-color: #262626;
+}
+nav ul li:hover a{
+    color:#fff;
+}
+.logoandsearch{
+       
+    width: 960px;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+.logo{
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+.int{
+    font-size: 60px;
+}
+.chuE{
+    color: #ff9601;
+}
+.des{
+    
+    font-size: 30px;
+    color: #adadad;
+    position: absolute;
+    bottom: -45px;
+    margin-left: 5px;
+}
+
+input{
+    display: block;
+    float: right;
+    width: 250px;
+    height: 40px;
+    background: url('images/search-icon.gif') right center no-repeat
+                ,url('images/search-input-tail.gif') repeat-x;
+    margin-top: 1.5em;
+   
+    border: #adadad 1px solid;
+}
+.main12{
+    position: relative;
+    background: 
+    url('images/bg-top.jpg') center top no-repeat,
+    url('images/bg-top-tail.jpg') left top repeat-x;
+    
+    
+    
+}
+#cls{
+    padding: 10px;
+}
+.main1{
+    width: 940px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    
+    padding: 20px;
+    /* position: absolute;
+    top:10px;
+    left: 0;
+    right: 0; */
+}
+.images{
+    width: 940px;
+    display:inline-block;
+   /* border:#fff 15px solid; */
+    
+    
+}
+
+.anhcha{
+    float: left;
+}
+.anhcon{
+    text-align: center;
+    /* float: left; */
+
+}
+.cacanhcon{
+    float: left;
+    padding: 20px;
+    padding-right:0px;
+    padding-top: 0px;
+}
+.para{
+    width: 940px;
+    /* height: 50px; */
+    display: inline-block;
+    
+}
+.hello{
+    /* display: block; */
+    width: 20%;
+    /* height: auto; */
+    float: left;
+    font-size: 47px;
+    color: #ff9601;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.para img{
+    float: left;
+    margin-right: 20px;
+}
+.demo{
+    /* display: block; */
+    width: 75%;
+    font-size: 13px;
+    /* height: auto; */
+    float: left;
+    padding: 10px;
+    
+}
+.linkden{
+    color: #000;
+}
+.main2{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:50px;
+}
+.cls{
+    clear: both;
+}
+.main2 h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 20px;
+}
+.main2 img{
+    border:#fff 12px solid;
+    margin-right: 40px;
+}
+.main2 ul{
+    color: #f28d00;
+    list-style-image: url('images/marker.png');
+    font-size: 25px;
+    width: 216px; 
+   
+
+}
+.main2img1, #chamtron1, .main2img2, #chamtron2{
+    float: left; 
+}
+.main3{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+.main3 h2{
+    font-size: 40px;
+    color: #262626;
+    padding: 30px 0 15px 0;
+    text-transform: capitalize;
+}
+.abo, .tes, .wha{
+    width: 31%;
+    float: left;
+    padding-right: 20px;
+}
+#inhoa{
+    text-transform: uppercase;
+}
+.main3 p{
+    font-size: 13px;
+    line-height: 22px;
+}
+.tes img{
+    float:left;
+    padding-right: 5px;
+}
+.tes p{
+    box-sizing: border-box;
+    float: left;
+    width: 246px;
+}
+.ngay{
+    color: #ff9601;
+
+}
+#jam{
+    font-size: 15px;
+}
+footer{
+    background-color: #f2f2f2;  
+    
+}
+.ft{
+    width: 960px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;   
+    padding: 50px 0 100px 0;
+    display: block;
+}
+.ft p{
+    width: 31%;
+    float: left;
+    padding-right: 20px;
+}
+#sdt{
+    display: block;
+    width: 31%;
+    font-size: 27px;
+    float: left;
+    padding-right: 20px;
+    color: #8f8f8f;
+    text-decoration: none;
+    line-height: 42.5px;
+}
+.ft img{
+    float: left;
+    padding-right: 20px;
+}
+#sd{
+    
+    color: #262626;
+    
+    font-size: 37px;
+  
+}

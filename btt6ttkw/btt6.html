@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ok{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form oninput="y.value=x.value">
+    <h1>Register for Miss Bakers Space Cadets</h1>
+    <fieldset id="ok">
+        <legend>Personal details</legend>
+            <label for="fname">First Name</label><br>
+            <input type="text" name="First Name" id="" placeholder="First name only"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="Last Name" id="" placeholder="Last name only"><br>
+            <label for="fname">Date of Birth</label><br>
+            <input type="date" name="Date" id=""><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="Email" id="" placeholder="example@domain.com"><br>
+            <label for="url">URL</label><br>
+            <input type="url" name="url" id="" placeholder="http://mysite.com"><br>
+            <label for="Telephone">Telephone</label><br>
+            <input type="tel" name="Telephone" id="" placeholder="Eg. +447000 000000"><br>
+            <label for="shoesize">Shoesize</label><br>
+            <input type="number" name="Shoesize" id=""><br>
+            <label for="range">Flying Skill level(1 low - 100 high)</label><br>
+           
+            <input type="range" name="range" id="x" min="1" max="100" value="1"><br>
+            <output name="range" id="y"></output>
+            
+    </fieldset>
+    <fieldset id="ok">
+        <legend>Billing address</legend>
+            <label for="">Address</label>
+            <textarea name="" id="" cols="20" rows="7"></textarea><br>
+            <label for="">Post code</label><br>
+            <input type="number" name="" id=""><br>
+            <label for="">Country</label><br>
+            <input type="text" name="" id=""><br>
+    </fieldset>
+    
+    <fieldset id="ok">
+        <legend>Card details</legend>
+        <fieldset id="cardtype">
+            <legend>Card type</legend>
+                <input type="radio" name="Card" id=""><label for="">VISA</label> 
+                <input type="radio" name="Card" id=""><label for="">Masterrcard</label>
+                <input type="radio" name="Card" id=""><label for="">AMEX</label>
+        </fieldset>
+        <label for="">Name</label><br>
+        <input type="text"><br>
+        <label for="">Card number</label><br>
+        <input type="number"><br>
+        <label for="">Security code</label><br>
+        <input type="number"><br>
+        <label for="">Expiry Date</label><br>
+        <input type="datetime-local"><br> 
+    </fieldset>
+
+    <fieldset id="ok">
+        <input type="submit" value="Place Order">
+    </fieldset>
+</form>
+</body>
+</html>

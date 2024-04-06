@@ -1,0 +1,51 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+}
+header,div{
+    border: 2px solid #1cfdee90;
+    background-color: #9f9f9f90;
+}
+
+nav{
+    width: 960px;
+    height: 71px;
+    background-color: rgb(195, 195, 195);
+    
+}
+nav ul li{
+    margin: 20px;
+    padding: 20px;
+    background-color:#c86363;
+    height: 40px;
+    width: 186px;
+    border: 1px unset #ff0000;
+    display: inline;
+    
+}
+nav ul li a{
+    font-size: 25px;
+}
+.logoandsearch{
+    width: 100%;
+    height: 71px;
+}
+div p{
+    float:left;
+}
+.logo{
+    font-size: 20px;
+}
+#search{
+    float: right;
+}
+.cls{
+    background-color: aqua;
+    clear: both; 
+}
+
+input{
+    background-image: url("images/search-icon.gif");
+    background-repeat: no-repeat;
+    background-position: right;
+}

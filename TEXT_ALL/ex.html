@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BTVN tuần 9</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> 
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0 auto;
+        }
+        body{
+            background-color: #e6eaeb;
+            width: 960px;
+            height: 300px;
+        }
+        .dow{
+            width: 290px;
+            height: 60px;
+            background-color:#34b3a0;
+            float: right;
+            border-radius: 3px 3px 3px 3px; 
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .dow a span{
+            width: 70%;
+            height: 100%;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            transition: width 3s ease;
+        }
+        a i{
+            font-size: 30px;
+            text-align: center;
+            background-color:#1a7b72;   
+            width: 30%;
+            height: 100%;
+            float: right;
+            border-radius: 0px 3px 3px 0px;
+        }
+        .dow:hover .icon::before{
+            width: 290px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dow">
+        <a href="#"><span>download</span> <i class="fa fa-arrow-down icon"></i></a>
+    </div>
+</body>
+</html>

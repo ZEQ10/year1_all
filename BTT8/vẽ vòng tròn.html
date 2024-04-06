@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+       *{
+        margin: 0 ;
+        padding: 0;
+       }
+       .box{
+        width: 300px;
+        height: 300px;
+        border: 5px solid brown;
+        border-radius: 50%;
+        margin: 0 20px 0 0;
+        float: left;
+       }
+       .img1{
+        width: 300px;
+        height: 300px;
+        clip-path: circle(50%);
+        /*  */
+       }
+       .box2{
+        background: url('flower.jpeg') center no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        overflow: hidden;
+       }
+       .box1{
+        position: relative;
+       }
+       .box1 img{
+        position: absolute;
+        z-index: 1;
+       }
+       .box1 h2{
+        position: absolute;
+        width: 150px;
+        height: 30px;
+        background-color: aqua;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+       }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box box1">
+        <h2>Quý Quý Quý</h2>
+        <img src="flower.jpeg" alt="" class="img1">
+       
+    </div>
+    <div class="box box2">
+        <h1>Quý <br>Quý <br>Quý <br>Quý <br>Quý <br>Quý <br>Quý <br>Quý <br>Quý <br>Quý <br>Quý <br>Quý <br> </h1>
+    </div>
+
+</body>
+</html>

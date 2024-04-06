@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        .download-btn {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0077FF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  /* width: 100px;
+  height: 20px; */
+}
+
+.download-icon {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-left: 8px;
+  opacity: 0.5;
+  transition: all 1s ease-in-out;
+ 
+}
+
+.download-btn:hover .download-icon {
+  margin:0 30px 0 30px;
+  opacity: 1;
+  /* position: absolute; */
+  /* right: 55px; */
+  
+}
+
+.download-btn:hover .download-text {
+  display: none;
+}
+
+    </style>
+
+
+    <title>Dcument</title>
+</head>
+<body>
+    <div>
+        <a href="path/to/file" download class="download-btn">
+            <span class="download-text">Download</span>
+            <i class="fas fa-download download-icon"></i>
+          </a>
+          
+    </div>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style id="reset">
+        a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt, 
+em, embed,
+fieldset, figcaption, figure, font, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd, 
+keygen,                                                       /*Cô nhớ xem đường dẫn link ảnh của em nha cô (images/anh.jgp) */          
+label, legend, li, 
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tt,
+u, ul, 
+var{
+    background: transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+    vertical-align: top; }
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table, table td { 
+	padding:0;
+	border:none;
+	border-collapse:collapse;
+}
+img, embed {
+	vertical-align:top; 
+}
+
+    </style>
+    <style id="css">
+            body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #262626;
+    height: auto;
+}
+a{
+    color: #ff9601;
+}
+header{
+    height: 160px;
+    background-color: rgb(255, 255, 255);
+}
+header nav{
+    height: 71px;
+    background:url('images/row1-top-tail.gif') repeat-x;
+}
+nav ul{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul li{
+    display: inline-block;
+    width: 188px;
+    line-height: 70px;
+    text-align: center;
+    background-image: url('images/menu-a-tail.gif');
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+}
+
+
+nav ul li a{
+    font-size: 150%;
+    color: #262626;
+    text-transform: uppercase;
+    text-decoration: none;  
+}
+nav ul li:hover{
+    background-color: #262626;
+}
+nav ul li:hover a{
+    color:#fff;
+}
+.logoandsearch{
+       
+    width: 960px;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+.logo{
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+.int{
+    font-size: 60px;
+}
+.chuE{
+    color: #ff9601;
+}
+.des{
+    
+    font-size: 30px;
+    color: #adadad;
+    position: absolute;
+    bottom: -45px;
+    margin-left: 5px;
+}
+
+input{
+    display: block;
+    float: right;
+    width: 250px;
+    height: 40px;
+    background: url('images/search-icon.gif') right center no-repeat
+                ,url('images/search-input-tail.gif') repeat-x;
+    margin-top: 1.5em;
+   
+    border: #adadad 1px solid;
+}
+.main12{
+    position: relative;
+    background: 
+    url('images/bg-top.jpg') center top no-repeat,
+    url('images/bg-top-tail.jpg') left top repeat-x;
+    
+    
+    
+}
+#cls{
+    padding: 15px;
+}
+.main1{
+    width: 940px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    
+    padding: 20px;
+    /* position: absolute;
+    top:10px;
+    left: 0;
+    right: 0; */
+}
+.images{
+    width: 940px;
+    display:inline-block;
+   /* border:#fff 15px solid; */
+    
+    
+}
+
+.anhcha{
+    float: left;
+}
+.anhcon{
+    text-align: center;
+    /* float: left; */
+
+}
+.cacanhcon{
+    float: left;
+    padding: 20px;
+    padding-right:0px;
+    padding-top: 0px;
+}
+.para{
+    width: 940px;
+    /* height: 50px; */
+    display: inline-block;
+    
+}
+.hello{
+    /* display: block; */
+    width: 20%;
+    /* height: auto; */
+    float: left;
+    font-size: 47px;
+    color: #ff9601;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.para img{
+    float: left;
+    margin-right: 20px;
+}
+.demo{
+    /* display: block; */
+    width: 75%;
+    font-size: 13px;
+    /* height: auto; */
+    float: left;
+    padding: 10px;
+    
+}
+.linkden{
+    color: #000;
+}
+.main2{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:50px;
+}
+.cls{
+    clear: both;
+}
+.main2 h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 20px;
+}
+.main2 img{
+    border:#fff 12px solid;
+    margin-right: 40px;
+}
+.main2 ul{
+    color: #f28d00;
+    list-style-image: url('images/marker.png');
+    font-size: 25px;
+    width: 216px; 
+   
+
+}
+.main2img1, #chamtron1, .main2img2, #chamtron2{
+    float: left; 
+}
+.main3{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+.main3 h2{
+    font-size: 40px;
+    color: #262626;
+    padding: 30px 0 15px 0;
+    text-transform: capitalize;
+}
+.abo, .tes, .wha{
+    width: 31%;
+    float: left;
+    padding-right: 20px;
+}
+#inhoa{
+    text-transform: uppercase;
+}
+.main3 p{
+    font-size: 13px;
+    line-height: 22px;
+}
+.tes img{
+    float:left;
+    padding-right: 5px;
+}
+.tes p{
+    box-sizing: border-box;
+    float: left;
+    width: 246px;
+}
+.ngay{
+    color: #ff9601;
+}
+#jam{
+    font-size: 15px;
+}
+footer{
+    background-color: #f2f2f2;  
+    
+}
+.ft{
+    width: 960px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;   
+    padding: 50px 0 100px 0;
+    display: block;
+}
+.ft p{
+    width: 31%;
+    float: left;
+    padding-right: 20px;
+}
+#sdt{
+    display: block;
+    width: 31%;
+    font-size: 27px;
+    float: left;
+    padding-right: 20px;
+    color: #8f8f8f;
+    text-decoration: none;
+    line-height: 42.5px;
+}
+.ft img{
+    float: left;
+    padding-right: 20px;
+}
+#sd{
+    
+    color: #262626;
+    
+    font-size: 37px;
+  
+}
+
+    </style>
+    <title>03-Trần Đình Quý</title>
+</head>
+<body>
+    <header>
+            <nav>
+                <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">catalogue</a></li>
+                  <li><a href="#">pricing</a></li>                 
+                  <li><a href="#">contacts</a></li>
+                </ul>
+            </nav>
+           
+            <div class="logoandsearch">
+                <a href="#" class="logo"><span class="int">int<span class="chuE">e</span>rior</span><span class="des">design</span></a>
+                <form action="/search" method="GET">
+                    <input type="search" name="" class="search">
+                </form>
+            </div>       
+    </header>
+   <div class="main">
+    <div class="main12"> 
+        <div class="cls" id="cls"></div>
+        <div class="main1">
+                <div class="images">
+                    <div class="anhcha">
+                        <img src="images/gallery-img4.jpg" alt="">
+                    </div>
+                    <div class="anhcon">
+                        <img src="images/thumb-1.jpg" alt="" class="cacanhcon">
+                        <img src="images/thumb-2.jpg" alt="" class="cacanhcon">
+                        <img src="images/thumb-3.jpg" alt="" class="cacanhcon">
+                        <img src="images/thumb-4.jpg" alt="" class="cacanhcon">
+                        <img src="images/thumb-5.jpg" alt="" class="cacanhcon">
+                        <img src="images/thumb-6.jpg" alt="" class="cacanhcon">
+                    </div>
+                </div>
+                <div class="para">
+                    <p class="hello">HELLO!</p>
+                    <img src="images/row1-top-tail.gif" alt="">
+                    <p class="demo">
+                       <strong>Demo Design</strong> is one of <a href="">free website templates</a> created by our team. This website template is opti mized for 1024X768 screen resolution. It is also XHTML & CSS valid. It has several pages: <a href="#" class="linkden">About</a>, <a href="#" class="linkden">Services</a>, <a href="#" class="linkden">Catalogue</a>, <a href="#" class="linkden">Pricing</a>, <a href="#" class="linkden">Contact Us</a> (note that contact us form – doesn’t work).
+                    </p>
+                </div>
+        </div>
+        <div class="main2">
+            <div class="cls"></div>
+            <h2>Our Services List</h2>
+            <img src="images/page1-img1.jpg" alt="" class="main2img1">
+            <ul class="chamtron" id="chamtron1">
+                <li>Interior Decorating Services</li>
+                <li>Complete Color Analysis</li>
+            </ul>
+            <img src="images/page1-img2.jpg" alt="" class="main2img2">
+            <ul class="chamtron" id="chamtron2">
+                <li>Design Services for Home Construction</li>
+                <li>Interior Design Remodeling</li>
+            </ul>
+            <div class="cls"></div>
+        </div>
+    </div>
+        <div class="main3">
+            <div class="abo">
+                <h2>about <span id="inhoa">us</span></h2>
+                <p>
+                    This <a href="#">Demo Template</a> goes with two pack ages: with PSD source files and without them.<br><br>
+                    PSD source files are available for free for the registered members of Templates.com. The basic package (without PSD source) is available for anyone without registration.
+                </p>
+            </div>
+            <div class="tes">
+                <h2>testimonials</h2>
+                <img src="images/quote.png" alt="">
+                <p>At vero eos et accusamus et iusto odio tium voluptatum deleniti atque corrupti quos
+                    dolores et quas molestias excepturi sint occaecati cupiditate.<br><br>
+                <b id="jam">James Reese</b>
+                <br>
+                    Managing Director
+                </p>
+            </div>
+            <div class="wha">
+                <h2>what's new?</h2>
+                <p>
+                    <b class="ngay">15.08.2011</b>
+                    <br>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+                    <br><b class="ngay">11.08.2011</b>
+                    <br>Totam rem aperiam, eaque ipsa quae ab illo inven tore veritatis et quasi architecto.
+                </p>
+            </div>
+            <div class="cls"></div>
+        </div>
+    
+    <footer>
+        <div class="cls"></div>
+        <div class="ft">
+                <p>Demo Design &copy; 2011 Privacy Policy
+                    <br> <a href="#">Website Template</a> | <a href="#">html5xcss3.com</a>
+                </p>
+                <a href="#" id="sdt">+1(800)<span id="sd"> 123-1234</span></a>
+                
+                    <a href="#"><img src="images/social-icons.png" alt=""></a>
+        </div>
+        <div class="cls"></div>
+    </footer>
+</div>
+</body>
+</html>

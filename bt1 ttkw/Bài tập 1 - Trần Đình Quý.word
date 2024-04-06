@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML - Bài tập 1</title>
+  <style>
+    a{
+      text-decoration: none;
+    }
+    a:hover{
+      background: rgb(109, 126, 185);
+      border-bottom: 2px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="border: 5px dotted #9f22b7;"> Đây là thẻ tiêu đề </h1>
+  <hr>
+  <a href="https://ute.udn.vn/default.aspx" target="blank">UTE</a><br>
+  <a href="https://ute.udn.vn/default.aspx" target="blank">UDN</a>
+  <h2> Đây là thẻ tiêu đề </h2>
+  <p>Lorem ipsum là một văn bản giữ chỗ thường được sử dụng để thể hiện <span style="font-size:20px;font-weight:bold;"> hình thức trực quan của tài liệu hoặc kiểu chữ mà không dựa vào nội dung có ý nghĩa.</span> <br>Lorem ipsum có thể được sử dụng làm trình giữ chỗ trước khi có bản sao cuối cùng.</p>
+    <pre><i>
+Buồn trông cửa bể chiều hôm
+Thuyền ai thấp thoáng cánh buồm xa xa?
+Buồn trông ngọn nước mới sa
+Hoa trôi man mác biết là về đâu?
+Buồn trông nội cỏ rầu rầu
+Chân mây mặt đất một màu xanh xanh
+Buồn trông gió cuốn mặt duềnh
+Ầm ầm tiếng sóng kêu quanh ghế ngồi...
+    </i></pre>
+    <code>
+    #include<stdio.h>
+
+int main() { <br>
+	printf("Hello Codelearn");<br>
+	return 0;<br>
+}
+    </code>
+  </body>
+
+</html>

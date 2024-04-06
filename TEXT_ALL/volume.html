@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .slider-wrapper {
+  position: relative;
+  height: 12px;
+  width: 300px;
+  background-color: #ddd;
+  left: 500px;
+  top: 300px;
+  
+}
+
+.slider-bar {
+  height: 6px;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-button {
+  height: 16px;
+  width: 16px;
+  background-color: #555;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function() {
+  var isDragging = false;
+  var sliderButton = $(".slider-button");
+  var sliderBar = $(".slider-bar");
+  var sliderWrapper = $(".slider-wrapper");
+  var sliderWidth = sliderWrapper.width();
+  var maxLeftPos = sliderWidth - sliderButton.width();
+
+  sliderButton.mousedown(function() {
+    isDragging = true;
+  });
+
+  $(document).mouseup(function() {
+    isDragging = false;
+  });
+
+  sliderWrapper.mousemove(function(e) {
+    if (isDragging) {
+      var leftPos = e.pageX - sliderWrapper.offset().left - (sliderButton.width() / 2);
+      if (leftPos < 0) {
+        leftPos = 0;
+      } else if (leftPos > maxLeftPos) {
+        leftPos = maxLeftPos;
+      }
+      sliderButton.css("left", leftPos + "px");
+    }
+  });
+});
+
+    </script>
+</head>
+<body>
+    <div class="slider-wrapper">
+        <div class="slider-bar"></div>
+        <div class="slider-button"></div>
+      </div>
+      
+</body>
+</html>
